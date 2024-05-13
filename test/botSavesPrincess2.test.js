@@ -1,0 +1,6 @@
+/*
+Write tests for finding princess and bot
+Write tests for determining the direction
+Write tests for edge cases
+Write tests for printing output
+*/
