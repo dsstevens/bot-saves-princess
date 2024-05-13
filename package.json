@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "challenge:1": "node src/botSavesPrincess1.js"
   },
   "repository": {
     "type": "git",
