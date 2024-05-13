@@ -1,5 +1,5 @@
 function processData() {
-  var lines = process.argv[2]?.split('|')
+  var lines = process.argv[2]?.split('|').splice(1)
   var dimension = lines?.length
   var grid = [];
   for(var i = 0; i < dimension; i++)
