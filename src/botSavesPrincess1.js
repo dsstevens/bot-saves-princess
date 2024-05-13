@@ -1,30 +1,3 @@
-/*
-
-Princess in one of four corners, bot in center
-Sample grid is 3x3
-Output: print all moves at once
-
-INPUT: 2 params: integer N and the char array grid
-  Sample:
-  3
-  ---
-  -m-
-  p--
-
-OUTPUT: print all moves on consecutive lines. The moves must be separated by '\n', a newline
-  Sample: 
-  DOWN
-  LEFT
-
-GOAL: 
-  reach the princess in as few moves as possible and print to the console all steps at once
-
-HOW: 
-  find bot and princess
-  determine direction
-  output moves by printing to console
-*/
-
 function processData() {
   var lines = process.argv[2]?.split('|')
   var dimension = lines?.length
@@ -34,7 +7,7 @@ function processData() {
     grid.push(lines[i]);
   }
   if(lines) displayPathtoPrincess(dimension, grid);
-  else if(!lines) console.error("Argument needed"); 
+  else if(!lines) console.error("No grid provided"); 
 }
 
 function displayPathtoPrincess(dimension, grid) {
@@ -61,10 +34,5 @@ function displayPathtoPrincess(dimension, grid) {
 }
 
 processData()
-
-//changed this bc not using stdin in the CLI, differs from the hackerrank code block
-
-
-// "p--|-m-|---"
 
 module.exports = { displayPathtoPrincess }
