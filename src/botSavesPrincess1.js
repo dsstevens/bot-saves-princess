@@ -25,15 +25,16 @@ HOW:
   output moves by printing to console
 */
 
-function processData(input) {
-  var lines = input.split('\n');
-  var dimension = parseInt(lines[0]);
+function processData() {
+  var lines = process.argv[2]?.split('|')
+  var dimension = lines?.length
   var grid = [];
-  for(var i = 1; i <= dimension; ++i)
+  for(var i = 0; i < dimension; i++)
   {
-      grid.push(lines[i]);
+    grid.push(lines[i]);
   }
-  displayPathtoPrincess(dimension, grid);
+  if(lines) displayPathtoPrincess(dimension, grid);
+  else if(!lines) console.error("Argument needed"); 
 }
 
 function displayPathtoPrincess(dimension, grid) {
@@ -54,11 +55,16 @@ function displayPathtoPrincess(dimension, grid) {
   if (horizontal > 0) moves.push("RIGHT");
   else if (horizontal < 0) moves.push("LEFT");
 
-  console.log(moves.join('\n'));
+  let output = moves.join('\n')
+  console.log(output);
+  return output
 }
 
+processData()
+
 //changed this bc not using stdin in the CLI, differs from the hackerrank code block
-if (process.argv.length > 2) {
-  const input = process.argv.slice(2).join('\n');
-  processData(input);
-}
+
+
+// "p--|-m-|---"
+
+module.exports = { displayPathtoPrincess }
