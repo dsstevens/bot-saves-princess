@@ -33,11 +33,12 @@ describe('displayPathtoPrincess function', () => {
 
     test('should handle 3x3 grid', () => {
         const consoleSpy = jest.spyOn(console, 'log');
-        displayPathtoPrincess(3, ["p--", "-m-", "---"]);
+        const output = displayPathtoPrincess(3, ["p--", "-m-", "---"]);
+        expect(output).toBe('UP\nLEFT')
+        expect(consoleSpy).toHaveBeenCalledWith('UP\nLEFT')
     });
 
     test('should handle 9x9 grid', () => {
-        const consoleSpy = jest.spyOn(console, 'log');
         const grid = Array.from({ length: 9 }, () => '---'.repeat(9).split(''));
         grid[0][0] = 'p';
         grid[8][8] = 'm';
