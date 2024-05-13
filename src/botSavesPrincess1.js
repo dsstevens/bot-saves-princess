@@ -1,8 +1,8 @@
 function processData() {
-  var lines = process.argv[2]?.split('|').splice(1)
-  var dimension = lines?.length
-  var grid = [];
-  for(var i = 0; i < dimension; i++)
+  const lines = process.argv[2]?.split('|').splice(1)
+  const dimension = lines?.length
+  let grid = [];
+  for(let i = 0; i < dimension; i++)
   {
     grid.push(lines[i]);
   }
@@ -19,8 +19,8 @@ function displayPathtoPrincess(dimension, grid) {
       }
   }
 
-  let vertical = princessPosition[0] - botPosition[0];
-  let horizontal = princessPosition[1] - botPosition[1];
+  const vertical = princessPosition[0] - botPosition[0];
+  const horizontal = princessPosition[1] - botPosition[1];
   let moves = [];
 
   if (vertical > 0) moves.push("DOWN");
