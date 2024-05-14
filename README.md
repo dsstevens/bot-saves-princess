@@ -64,7 +64,8 @@ I followed JavaScript repo architecture conventions as taught by Turing School o
 - Although this algorithm can be categorized as a "greedy algorithm", its Big O calculation for time complexity determine it to be efficient: $O(n^2)$ for identifying the positions of the characters and $O(1)$ for determining the moves.
 - Unlike more complex pathfinding algorithms such as A* or Dijkstra's, this solution focuses on incremental, step-by-step navigation, which aligns with the problem requirement to output only the next move.
 - The HackerRank solution is completely functional, but the version to run locally still needs work to run in the CLI and be properly tested. Instead of doing TDD which I did for the first challenge, I wanted to ensure that I submitted a solution so based my approach on the first solution and coded in the IDE. 
-- In order to complete this challenge, I would like to refactor how processData is taking in input for node functionality and create command line variables to simplify how the user enters the command to run the program.  
+- In order to complete this challenge, I would like to refactor how processData is taking in input for node functionality and create command line variables to simplify how the user enters the command to run the program.
+- Click the image below to run the gif if it has already completed.  
    ![bot saves princess ](https://github.com/dsstevens/bot-saves-princess/assets/132790719/4174ca7e-0ee8-4a90-8e12-10dcc1bb0fdb)
 
 
