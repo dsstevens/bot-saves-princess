@@ -46,7 +46,7 @@ npm run challenge:1 '|---|-m-|p--'
 ## Solving The Problem
 
 ### Repo Architecture
-I followed JavaScript repo architecture conventions as taught by Turing School of Software & Design for this project.
+I followed JavaScript repo architecture conventions as taught by Turing School of Software & Design for this project.  
 ![Screenshot 2024-05-13 at 8 39 16 PM](https://github.com/dsstevens/bot-saves-princess/assets/132790719/ac260b5b-9c1d-433f-93a2-4c4f4cbfedbe)
 
 
